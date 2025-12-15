@@ -1,0 +1,8 @@
+/* Styles for login links used across pages */
+.refer-link {
+    color: #000 !important;
+    transition: color 0.15s ease-in-out;
+}
+.refer-link:hover {
+    color: #6c757d !important; /* Bootstrap's gray-600 */
+}

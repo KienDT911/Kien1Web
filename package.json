@@ -1,0 +1,16 @@
+{
+  "name": "login-register-ui",
+  "version": "1.0.0",
+  "description": "Login and Register UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./pages -p 8080 -a 0.0.0.0 -o",
+    "dev": "http-server ./pages -p 8080 -a 0.0.0.0 -c-1"
+  },
+  "keywords": ["login", "register"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

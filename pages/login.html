@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    >
+    <!-- External stylesheet for small page-specific rules -->
+    <link rel="stylesheet" href="../css/component.css">
+</head>
+<body>
+    <!-- Navigation Tab Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">TruKing Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" aria-disabled="true" href="./register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disable" aria-current="page" aria-disabled="true">Log In</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Tab End -->
+     
+    <!-- LogIn form container - Start -->
+    <div 
+        class="container d-flex justify-content-center align-items-center" 
+        style="height: 100vh;"
+    >
+        <form style="width: 400px">
+            <h3 class="text-center">Log In</h3>
+            <div class="mb-3">
+                <label for="EmailInput1" class="form-label">Email address</label>
+                <input 
+                    type="email" 
+                    class="form-control" 
+                    id="EmailInput1" 
+                    placeholder="account@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input 
+                    type="current-password"
+                    class="form-control"
+                    id="inputPassword"
+                    aria-describedby="passwordHelpBlock"
+                    placeholder="********"
+                >
+                <div id="passwordHelpBlock" class="form-text">
+                    Do not contain spaces or special characters (#$%^&*\<>/).
+                </div>
+            </div>
+            <div class="d-grid gap-2">
+                <button style="width: 100%" href="./login.html" role="button" class="btn btn-primary btn-dark"data-bs-toggle="button">Log In</button>
+            </div>
+            <p class="mt-3" style="text-align: center">
+                Don't have account yet? 
+                <a href="./register.html" class="refer-link">Create new account</a>
+            </p>
+        </form>
+    </div>
+    <!-- LogIn form container - End -->
+</body>
+</html>

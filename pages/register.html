@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <!-- External stylesheet for small page-specific rules -->
+        <link rel="stylesheet" href="../css/component.css">
+    </head>
+    <body>
+        <!-- Navigation Tab Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">TruKing Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link disable" aria-current="page" aria-disabled="true">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./login.html">Log In</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Tab End -->
+        
+        <!-- Register form container - Start -->
+        <div 
+            class="container d-flex justify-content-center align-items-center" 
+            style="height: 100vh;"
+        >
+            <form id="Form-Register" style="width: 400px">
+                <h2 class="text-center">Register</h2>
+                <div class="mb-3">
+                    <label for="UserName1" class="form-label">User Name</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="UserName1" 
+                        placeholder="Name">
+                    <div id="UserName1-error" style="color: rgb(255, 46, 46); font-size: 12px; display: none;">Please fill your name</div>
+                </div>
+                <div class="mb-3">
+                    <label for="EmailInput1" class="form-label">Email address</label>
+                    <input 
+                        type="email" 
+                        class="form-control" 
+                        id="EmailInput1" 
+                        placeholder="account@gmail.com">
+                    <div id="email-error" style="color: rgb(255, 46, 46); font-size: 12px; display: none;">Please fill your email account</div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input 
+                        type="new-password"
+                        class="form-control"
+                        id="inputPassword"
+                        aria-describedby="passwordHelpBlock"
+                        placeholder="********"
+                    >
+                    <div id="inputPassword-error" style="color: rgb(255, 46, 46); font-size: 12px; display: none;">Please fill your password</div>
+                    <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces or special characters.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="ReinputPassword" class="form-label">Confirm Password</label>
+                    <input 
+                        type="new-password"
+                        class="form-control"
+                        id="ReinputPassword"
+                        aria-describedby="passwordHelpBlock"
+                        placeholder="********"
+                    >
+                    <div id="ReinputPassword-error" style="color: rgb(255, 46, 46); font-size: 12px; display: none;">Not the same with password</div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button 
+                        style="width: 100%"
+                        type="submit"
+                        href="./login.html"
+                        role="button"
+                        class="btn btn-primary btn-dark"
+                        data-bs-toggle="button"
+                            >Sign Up
+                    </button>
+                    <button style="background-color: rgb(216, 216, 216)" type="reset" value="Reset" class="btn btn-light">Reset</button>
+                </div>
+                <p class="mt-3" style="text-align: center; color: #000;">
+                    Already have an account? 
+                    <a href="./login.html" class="refer-link">Log In</a>
+                </p>
+            </form>
+        </div>
+        <!-- Register form container - End -->
+
+        <!-- Script - Start -->
+         <script 
+            src="../js/register_JS.js" 
+            type="text/javascript">
+        </script>
+        <!-- Script - End -->
+    </body>
+</html>
